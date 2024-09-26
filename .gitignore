@@ -1,0 +1,35 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+
+# testing
+coverage/
+
+# production
+build/
+
+# config
+.env
+
+# 프로젝트 
+/01HighOrderFunc
+project01-comments/
+project02-json-place-holder/
+project03-chatting/
+react01-basic/
+react02-board1-without-db/
+react02-board1-without-t/
+react03-router/
+react04-board2-with-router/
+react05-useffect-fetch/
+react06-board3-restapi/
+react07-optimization/
+react08-dom-management/
+react09-scoreboard/
+react10-redux/
+react11-firestore/
+react12-realtime/
+react13-storage/
+react14-spring/
+
