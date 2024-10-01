@@ -13,23 +13,23 @@ build/
 .env
 
 # 프로젝트 
-/01HighOrderFunc
-project01-comments/
-project02-json-place-holder/
-project03-chatting/
-react01-basic/
-react02-board1-without-db/
-react02-board1-without-t/
-react03-router/
-react04-board2-with-router/
-react05-useffect-fetch/
-react06-board3-restapi/
-react07-optimization/
-react08-dom-management/
-react09-scoreboard/
-react10-redux/
-react11-firestore/
-react12-realtime/
-react13-storage/
-react14-spring/
+p_01HighOrderFunc/
+p_project01-comments/
+p_project02-json-place-holder/
+p_project03-chatting/
+p_react01-basic/
+p_react02-board1-without-db/
+p_react02-board1-without-t/
+p_react03-router/
+p_react04-board2-with-router/
+p_react05-useffect-fetch/
+p_react06-board3-restapi/
+p_react07-optimization/
+p_react08-dom-management/
+p_react09-scoreboard/
+p_react10-redux/
+p_react11-firestore/
+p_react12-realtime/
+p_react13-storage/
+p_react14-spring/
 
