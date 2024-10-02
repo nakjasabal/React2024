@@ -1,5 +1,3 @@
-import React from "react";
-
 const BackComp = ({propData2, onMyEvent2}) => {
   const liRows = [];
 
@@ -20,4 +18,5 @@ const BackComp = ({propData2, onMyEvent2}) => {
     </ul>
   </>)
 }
+
 export default BackComp;

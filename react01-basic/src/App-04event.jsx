@@ -10,14 +10,16 @@ function FrontComp(props) {
   }
 
   return (<>
-    <li>프론트앤드</li>
+    <li><a href='/' onClick={()=>{
+      props.onMyEvent1();
+    }}>프론트앤드</a></li>
     <ul>
       {liRows}
     </ul>
   </>)
 }
 
-const BackComp = ({propData2}) => {
+const BackComp = ({propData2, onMyEvent2}) => {
   const liRows = [];
 
   let keyCnt=0;
@@ -28,7 +30,10 @@ const BackComp = ({propData2}) => {
   }
 
   return (<>
-    <li>백앤드</li>
+    <li><a href="/" onClick={(event)=>{
+      event.preventDefault();
+      onMyEvent2('백앤드 클릭됨(자식전달)');
+    }}>백앤드</a></li>
     <ul>
       {liRows}       
     </ul>
@@ -41,10 +46,18 @@ function App() {
 
   return (<>
     <div>
-      <h2>React : Props</h2>
+      <h2>React-Event</h2>
       <ol>
-        <FrontComp propData1={frontData} ></FrontComp>
-        <BackComp propData2={backData} />
+        <FrontComp propData1={frontData} 
+          onMyEvent1={()=>{
+            alert('프론트앤드 클릭됨(부모전달)');
+          }}
+        ></FrontComp>
+        <BackComp propData2={backData} 
+          onMyEvent2={(msg)=>{
+            alert(msg);
+          }}
+        />
       </ol>
     </div>
   </>)

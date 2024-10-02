@@ -9,7 +9,7 @@ function App() {
   };
   return (<>
     <div>
-      <h2>React : Style</h2>
+      <h2>React - Style</h2>
       <ol>
         <li style={{color : "red"}}>프론트앤드</li>
         <ul style={myStyle}>

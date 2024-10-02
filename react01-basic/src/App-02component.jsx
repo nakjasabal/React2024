@@ -27,7 +27,7 @@ const BackComp = () => {
 function App() {
   return (<>
     <div>
-      <h2>React : Component</h2>
+      <h2>React-Component</h2>
       <ol>
         <FrontComp></FrontComp>
         <BackComp />

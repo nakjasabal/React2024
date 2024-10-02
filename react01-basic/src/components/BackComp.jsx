@@ -1,5 +1,3 @@
-import React from "react";
-
 const BackComp = ({propData2, onMyEvent2}) => {
   const liRows = [];
 
@@ -13,7 +11,7 @@ const BackComp = ({propData2, onMyEvent2}) => {
   return (<>
     <li><a href="/" onClick={(event)=>{
       event.preventDefault();
-      onMyEvent2('back');
+      onMyEvent2('백앤드 클릭됨(자식전달)');
     }}>백앤드</a></li>
     <ul>
       {liRows}       

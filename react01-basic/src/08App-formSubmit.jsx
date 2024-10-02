@@ -24,7 +24,7 @@ function App() {
   const [message, setMessage] = useState('폼값 검증 진행중');
   return (<>
     <div>
-      <h2>React : Form submit</h2>
+      <h2>React-Form submit</h2>
       <WriteForm writeAction={(gu, ti)=>{
         console.log("Form값", gu, ti);
         if(gu!=='' && ti!==''){

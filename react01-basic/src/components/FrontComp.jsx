@@ -1,6 +1,4 @@
-import React from "react";
-
-function FrontComp(props) {
+export default function FrontComp(props) {
   const liRows = [];
 
   for(let i=0 ; i<props.propData1.length ; i++){    
@@ -12,12 +10,10 @@ function FrontComp(props) {
   return (<>
     <li><a href='/' onClick={(event)=>{
       event.preventDefault();
-      props.onMyEvent1('front');
+      props.onMyEvent1();
     }}>프론트앤드</a></li>
     <ul>
       {liRows}
     </ul>
   </>)
 }
-
-export default FrontComp;

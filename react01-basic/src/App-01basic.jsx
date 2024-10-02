@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (<>
     <div>
-      <h2>React : 기초</h2>
+      <h2>React-기본</h2>
       <ol>
         <li>프론트앤드</li>
         <ul>

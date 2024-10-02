@@ -9,7 +9,7 @@ function App() {
 
   return (<>
     <div>
-      <h2>React : Modules</h2>
+      <h2>React-Modules</h2>
       <ol>
         <FrontComp propData1={frontData} 
           onMyEvent1={()=>{

@@ -1,40 +1,27 @@
 import './App.css'
-import {useState} from 'react';
 
-function WriteForm(props){
-  return (<>
-    <form onSubmit={(e)=>{
-      console.log("이벤트객체e", e);
-      e.preventDefault();
-      let gubun = e.target.gubun.value;
-      let title = e.target.title.value;
-      props.writeAction(gubun, title);
-    }}>
-      <select name="gubun">
-        <option value="front">프론트앤드</option>
-        <option value="back">백앤드</option>
-      </select>
-      <input type="text" name="title" />
-      <input type="submit" value="추가" />
-    </form>
-  </>)
-}
+import FrontComp from './components/FrontComp'
+import BackComp from './components/BackComp'
 
 function App() {
-  const [message, setMessage] = useState('폼값 검증 진행중');
+  const frontData = ['HTML5', 'CSS3', 'Javascript', 'jQuery'];
+  const backData = ['Java', 'Oracle', 'JSP', 'Spring Boot'];
+
   return (<>
     <div>
-      <h2>React : Form submit</h2>
-      <WriteForm writeAction={(gu, ti)=>{
-        console.log("Form값", gu, ti);
-        if(gu!=='' && ti!==''){
-          setMessage('폼값 검증 완료');
-        }
-        else{
-          alert("빈값있음");
-        }
-      }}/>
-      <p>{message}</p>
+      <h2>React-Modules</h2>
+      <ol>
+        <FrontComp propData1={frontData} 
+          onMyEvent1={()=>{
+            alert('프론트앤드 클릭됨(부모전달)');
+          }}
+        ></FrontComp>
+        <BackComp propData2={backData} 
+          onMyEvent2={(msg)=>{
+            alert(msg);
+          }}
+        />
+      </ol>
     </div>
   </>)
 }

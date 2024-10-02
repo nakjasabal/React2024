@@ -1,6 +1,4 @@
-import React from "react";
-
-function FrontComp(props) {
+export default function FrontComp(props) {
   const liRows = [];
 
   for(let i=0 ; i<props.propData1.length ; i++){    
@@ -19,5 +17,3 @@ function FrontComp(props) {
     </ul>
   </>)
 }
-
-export default FrontComp;

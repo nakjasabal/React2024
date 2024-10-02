@@ -47,7 +47,7 @@ function App() {
       <h2><a href="/" onClick={(event)=>{      
         event.preventDefault();
         setMode('both');
-      }}>React : State</a></h2>
+      }}>React-State</a></h2>
       <ol>
         {contents}
       </ol>
