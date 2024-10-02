@@ -12,24 +12,6 @@ build/
 # config
 .env
 
-# 프로젝트 
-p_01HighOrderFunc/
-p_project01-comments/
-p_project02-json-place-holder/
-p_project03-chatting/
-p_react01-basic/
-p_react02-board1-without-db/
-p_react02-board1-without-t/
-p_react03-router/
-p_react04-board2-with-router/
-p_react05-useffect-fetch/
-p_react06-board3-restapi/
-p_react07-optimization/
-p_react08-dom-management/
-p_react09-scoreboard/
-p_react10-redux/
-p_react11-firestore/
-p_react12-realtime/
-p_react13-storage/
-p_react14-spring/
+# 기존 프로젝트 소스
+prevSrc/
 
