@@ -8,7 +8,6 @@ function MyComponent(props) {
   </>)
 }
 
-
 function App() {
 
   const [myState, setMyState] = useState(0)
@@ -21,7 +20,5 @@ function App() {
     }/>
   </>)
 }
-
-
 
 export default App

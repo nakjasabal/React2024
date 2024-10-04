@@ -6,7 +6,6 @@ function MyComponent(props) {
   </>)
 }
 
-
 function App() {
   return (<>
     <MyComponent onMyEvent1={
@@ -16,7 +15,5 @@ function App() {
     }/>
   </>)
 }
-
-
 
 export default App
