@@ -10,7 +10,7 @@ export default function FrontComp(props) {
   return (<>
     <li><a href='/' onClick={(event)=>{
       event.preventDefault();
-      props.onMyEvent1();
+      props.onMyEvent1('front');
     }}>프론트앤드</a></li>
     <ul>
       {liRows}
